@@ -18,12 +18,13 @@ public class StudentInformationSystem {
         Scanner sc= new Scanner (System.in);
        System.out.println("Name: Muhammad Ainul Yaqien Bin Jamdali");
        System.out.println("Student ID: S86071");
-       double mark1,mark2,totalmark;
+       double mark1,mark2,totalmark,average;
        System.out.print("Enter your mark1: ");
        mark1=sc.nextDouble();
        System.out.print("Please enter your mark2: ");
        mark2=sc.nextDouble();
        totalmark=mark1+mark2;
+       average = totalmark/2;
        System.out.println("Your total marks is: "+totalmark );
        
        String message;
