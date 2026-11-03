@@ -27,16 +27,21 @@ public class StudentInformationSystem {
        average = totalmark/2;
        System.out.println("Your total marks is: "+totalmark );
        
-       String message;
-       if (totalmark>=80)
+       String message,message2;
+       if (totalmark>=80){
            message="Excellent";
+           message2 = "As easy as ABC";
+       }
        else if(totalmark>=60 )
-           message="Good";
-           
+       {   message="Good";
+       message2= "I wish I could try harder";
+       }   
        else
-           message="Needs Improvement";
-       
-       System.out.println("Result: "+message);
+       {   message="Needs Improvement";
+       message2 = "I will try my best next time!";
+       }
+       System.out.println("Result: "+message );
+       System.out.println(message2);
        
     }
     
